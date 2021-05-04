@@ -13,7 +13,7 @@
                 <input name="usr" id="login-username" type="text">
             </div>
             <div class="lgninput">
-                <label>Clave</label>
+                <label>Clave *</label>
                 <input name="pwd" id="login-password" type="password">
             </div>
             <div class="lgninput butt"><button onclick="session.login()">Ingresar</button></div>
