@@ -1,0 +1,144 @@
+	.loginhead{
+		width: 550px;
+		height: 85px;
+		float: right;
+		margin-top: 0;
+		margin-right: 0px;
+		padding-top: 1px;
+		padding-left: 120px;
+		background:  url(../img/bg_login.png) repeat-x left top;
+}
+	.loginhead H3{
+		display: block;
+		width: 370px;
+		text-align: center;
+		padding: 1px;
+		margin-bottom: 6px;
+		margin-top:0px;
+		margin-left:-5px;
+		color: #000;
+		font-size: 12px;
+		background: #fad042;
+		font-weight: bold;
+}
+	.lgninput{
+		width: 135px;
+		height: 22px;
+		float: left;
+		padding-left: 5px;
+	}
+	
+	.lgninput label{
+		font-size: 12px;
+		text-shadow: #000 0 1px 3px;
+		color: #fff;
+		width: 50px;
+		display: block;
+		clear: both;
+		margin-right: 3px;
+		margin-bottom: 2px;
+}
+	.lgninput input[type="text"],.lgninput input[type="password"]{
+		font-size: 11px;
+    	padding: 3px;
+    	width: 120px !important;
+    	float: left;
+	}
+	.butt{
+		width: 70px !important;
+		margin-top: 13px;
+	}
+	.loginhead button{
+		font-size: 12px;
+		padding: 3px 5px;
+	}
+	.loginhead span.error{
+		display:none;
+		color: #fff;
+		font-size: 10px;
+		clear: both;
+		padding: 1px;
+		-moz-border-radius:3px;
+		border-radius: 3px;
+		-webkit-border-radius:3px;
+		border: 1px solid #fff;
+		background: #e7452c;
+		width: 357px;
+		text-align: center;
+		margin-top: -22px;
+		-moz-box-shadow:0px 1px 4px #333;
+   		-webkit-box-shadow: 0px 1px 4px #333;
+   		box-shadow:0px 1px 4px #333;
+   		position: fixed;
+}
+
+
+/**registrate aqui***/
+.regishere{
+	border-left: 1px solid #DDDDDD;
+    display: block;
+    float: right;
+    height: 86px;
+    margin-top: -25px;
+    position: relative;
+    width: 182px;
+	background: url(../img/bg_reghere.png) no-repeat left top;
+}
+.regishere:hover{
+	background: #fdf2d3 url(../img/bg_reghere.png) no-repeat left top;size}
+.regishere > .btn{
+	margin-left: 30px;
+    position: relative;
+    top: 31px;
+    background: #f9e91e;
+    text-shadow: #fff 0 1px 0;
+    border: 1px solid #c5b022;
+}
+
+
+
+
+
+/**Usuario ingresado**/
+.userdata{
+	color: #fff;
+	font-size: 12px;
+	text-shadow: #000 0 1px 3px;
+	float: right;
+	text-align: right;
+	padding: 10px;
+}
+.userdata p span{
+	font-weight: bold;
+}
+.userdata p.usertype{
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 11px;
+}
+.userdata button{
+	background: #ddd;
+	border-color: #555;
+	text-shadow: #fff 0 1px 0;
+	padding-top: 5px;
+}
+
+/*favoritos link logeado*/
+.misfavoritos{
+	float: right;
+	padding: 10px;
+}
+.misfavoritos button{
+	background: #ddd;
+	border-color: #555;
+	text-shadow: none;
+	padding-top: 5px;
+	font-weight: normal;
+	font-style: normal;
+}
+.misfavoritos button img,.userdata button img{
+	margin-right: 4px;
+	float: left;
+	margin-top: -3px;
+}

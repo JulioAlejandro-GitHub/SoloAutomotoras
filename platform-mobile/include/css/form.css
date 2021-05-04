@@ -1,0 +1,93 @@
+#my_custom_button {
+    width: 80px;
+    height: 60px;
+    background: url('../img/fotoupload_1.png') 0 0 no-repeat;
+    border:none;
+    padding: 0 4px 8px 0;
+    font-weight:bold
+}
+#my_custom_button:hover {
+    background: url('../img/fotoupload_1.png') 0 0 no-repeat;
+}
+#my_custom_button:active {
+    background: url('../img/fotoupload_1.png') 0 0 no-repeat;
+}
+
+/*******************************************************************************/
+#file_browse_wrapper_1 {
+    width: 80px;
+    height: 60px;
+    background: url('../img/fotoupload_1.png') 0 0 no-repeat;
+    border:none;
+    overflow:hidden;
+}
+#file_browse_wrapper_1:hover {
+    background: url('../img/fotoupload_1.png') 0 0 no-repeat;
+}
+#file_browse_wrapper_1:active {
+    background: url('../img/fotoupload_1_b.png') 0 0 no-repeat;
+}
+/*******************************************************************************/
+#file_browse_wrapper_2 {
+    width: 80px;
+    height: 60px;
+    background: url('../img/fotoupload_2.png') 0 0 no-repeat;
+    border:none;
+    overflow:hidden;
+}
+#file_browse_wrapper_2:hover {
+    background: url('../img/fotoupload_2.png') 0 0 no-repeat;
+}
+#file_browse_wrapper_2:active {
+    background: url('../img/fotoupload_2_b.png') 0 0 no-repeat;
+}
+/*******************************************************************************/
+#file_browse_wrapper_3 {
+    width: 80px;
+    height: 60px;
+    background: url('../img/fotoupload_3.png') 0 0 no-repeat;
+    border:none;
+    overflow:hidden;
+}
+#file_browse_wrapper_3:hover {
+    background: url('../img/fotoupload_3.png') 0 0 no-repeat;
+}
+#file_browse_wrapper_3:active {
+    background: url('../img/fotoupload_3_b.png') 0 0 no-repeat;
+}
+/*******************************************************************************/
+#file_browse_wrapper_4 {
+    width: 80px;
+    height: 60px;
+    background: url('../img/fotoupload_4.png') 0 0 no-repeat;
+    border:none;
+    overflow:hidden;
+}
+#file_browse_wrapper_4:hover {
+    background: url('../img/fotoupload_4.png') 0 0 no-repeat;
+}
+#file_browse_wrapper_4:active {
+    background: url('../img/fotoupload_4_b.png') 0 0 no-repeat;
+}
+/*******************************************************************************/
+#file_browse_wrapper_5 {
+    width: 80px;
+    height: 60px;
+    background: url('../img/fotoupload_5.png') 0 0 no-repeat;
+    border:none;
+    overflow:hidden;
+}
+#file_browse_wrapper_5:hover {
+    background: url('../img/fotoupload_5.png') 0 0 no-repeat;
+}
+#file_browse_wrapper_5:active {
+    background: url('../img/fotoupload_5_b.png') 0 0 no-repeat;
+}
+/*******************************************************************************/
+
+.file_browse{
+    margin-left:-145px;
+    opacity:0.0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}

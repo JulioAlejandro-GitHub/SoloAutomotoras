@@ -1,0 +1,915 @@
+/*---------------resets----------------------*/
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,pre,dl,dt,dd,fieldset,p,blockquote,th,td,input[type="checkbox"],input[type="radio"]{
+	margin: 0;
+	padding: 0;	
+}
+img{
+	border: 0 none;
+}
+img{
+	border: 0 none;
+}
+ul,li,ol{
+	list-style-type: none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*------gral------*/
+body{
+	background:#fff;
+}
+
+html,body,div,p {
+	font-family: 'Lucida Grande', Tahoma, Verdana, Helvetica, Arial, Geneva, sans-serif;
+	font-weight: normal;
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration:none;
+}
+a:link {
+	color: #016fbc;
+}
+a:visited {
+	color: #016fbc;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	color: #333;
+	text-decoration: underline;
+}
+/*Buttons*/
+.boton_input,input[type="submit"], input[type="button"], button,.btn,a.btn {
+	background: #fa9e11;
+	color:#000;
+	cursor:pointer;
+    text-align:right;
+	font-family:Arial, sans-serif;
+	font-weight: bold;
+	font-size:12px;
+	padding:5px 10px;
+	-moz-border-radius:3px;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+	border-color: #fac31a #d1902c #d1902c #d1902c;
+	border-style: solid;
+	border-width: 1px;
+	-moz-box-shadow:0px 1px 2px #444;
+   	-webkit-box-shadow: 0px 1px 2px #444;
+   	box-shadow:0px 1px 2px #444;
+   	text-shadow: #fac31a 0 1px 0;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.boton_input:hover,input[type="submit"]:hover, input[type="button"]:hover, button:hover,.btn:hover{
+	background: #e57211;
+	border-color: #e4a962 #c86a1b #c86a1b #c86a1b;
+	box-shadow:0px 1px 2px #aaa;
+	-moz-box-shadow:0px 1px 2px #aaa;
+   	-webkit-box-shadow: 0px 1px 2px #aaa;
+	text-decoration: none;
+}
+.boton_input.disabled,input[type="submit"].disabled, input[type="button"].disabled, button.disabled,.btn.disabled{
+	background:#ccc;
+	box-shadow:none;
+	-moz-box-shadow:none;
+   	-webkit-box-shadow:none;
+	border-color: transparent;
+	cursor: default;
+}
+/*publicar btn*/
+.fichabtn.pub button,.fichabtn.pub input[type="submit"],.fichabtn.pub input[type="button"]{
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background: #a4d51c;
+	border-color: #cff26b #719805 #719805 #719805;
+	text-shadow: #cff26b 0 1px 0;
+}
+.fichabtn.pub button:hover,.fichabtn.pub input[type="submit"]:hover,.fichabtn.pub input[type="button"]:hover{
+	background: #7ca801;
+	border-color: #92c309 #658802 #658802 #658802;
+	box-shadow:0px 1px 2px #aaa;
+	-moz-box-shadow:0px 1px 2px #aaa;
+   	-webkit-box-shadow: 0px 1px 2px #aaa;
+	text-decoration: none;
+}
+
+
+input[type="text"],input[type="password"],input[type="number"],textarea{
+	-moz-border-radius:3px;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+	border: 1px solid #bbb;
+	font-size: 12px;
+	padding: 4px;
+	color: #333;
+	-moz-box-shadow:inset 0px 1px 3px #ccc;
+   	-webkit-box-shadow:inset 0px 1px 3px #ccc;
+   	box-shadow:inset 0px 1px 3px #ccc;
+   	margin-bottom: 10px;
+}
+input[type="text"]:focus,input[type="password"]:focus,input[type="number"]:focus,textarea:focus{
+	-moz-box-shadow:inset 0px 1px 3px #bababa;
+   	-webkit-box-shadow:inset 0px 1px 3px #bababa;
+   	box-shadow:inset 0px 1px 3px #bababa;
+   	border: 1px solid #fa9e11;
+   	outline: 0;
+}
+input[type="text"]:disabled,input[type="password"]:disabled,input[type="number"]:disabled,textarea:disabled{
+	moz-box-shadow:none;
+   	-webkit-box-shadow:none;
+   	box-shadow:none;
+	border: 1px solid #ddd;
+	background: #fcfcfc;
+	color: #bbb;
+}
+
+.bx{
+	display: block;
+	width:1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	clear: both;
+}
+
+header{
+	width:auto;
+	height: 90px;
+	background: #222 url(../img/bg_head.jpg) no-repeat left top;	
+}
+header img{
+	margin-top: 5px;
+}
+nav{
+	width:auto;
+	height: 24px;
+	background: url(../img/bg_nav.png) repeat-x left top;
+	-moz-box-shadow:0px 1px 2px #aaa;
+   	-webkit-box-shadow: 0px 1px 2px #aaa;
+   	box-shadow:0px 1px 2px #aaa;
+}
+nav li{
+	display: block;
+	float: left;
+	list-style-type: none;
+	text-align: center;
+}
+nav li a{
+	display: block;
+	width:auto;
+	color: #000 !important;
+	font-size: 12px;
+	font-weight: bold;
+	/*text-shadow: #ac5a05 0 1px 0;*/
+	height: 18px;
+    padding: 4px 10px 2px;
+	border-left: 1px solid #fcc064;
+	border-right: 1px solid #c76a0a;
+}
+nav li a:hover{
+	background: #a7641e;
+	text-decoration: none;
+	color: #fff !important;
+}
+
+.lft{
+	float: left;
+}
+.rgt{
+	float: right;
+}
+
+/*list*/
+.list{/*contenedor izquierdo con listado catalogo*/
+	display: block;
+	width: 960px;
+	padding-bottom: 20px;
+	background: url(../img/bg_rgtaside.png) repeat-y right top;
+}
+.sidergt{/*lado derecho busqueda*/
+	display: block;
+	width: 230px;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+.sidergt p{
+	
+}
+.sidergt label{
+	display: block;
+	font-size: 10px;
+	margin-top: 10px;
+	color: #555;
+}
+.sidergt select{
+	width: 215px;
+}
+.sidergt button{
+	margin-left: 155px;
+    margin-top: 15px;
+}
+span.par{
+	float: left;
+	margin-right: 5px;
+
+}
+span.par select{
+	width: 105px;
+}
+span.par input[type="text"]{
+	font-size: 11px;
+	width: 80px;
+	margin-bottom: 0 !important;
+}
+
+/*btnes usado-nuevo*/
+.btn_usednw{
+	padding-left: 1px;
+	margin-bottom: 6px;
+}
+.btn_used,.btn_new {
+	background: #d8d6cd;
+	color:#000;
+	cursor:pointer;
+    text-align:right;
+	font-family:Arial, sans-serif;
+	font-weight: bold;
+	font-size:12px;
+	padding: 3px 6px 3px 19px ;
+	border-color: #faf9f3 #7f7d73 #7f7d73 #7f7d73;
+	border-style: solid;
+	border-width: 1px;
+	-moz-box-shadow:0px 1px 2px #666;
+   	-webkit-box-shadow: 0px 1px 2px #666;
+   	box-shadow:0px 1px 2px #666;
+	text-shadow: white 0 1px 0;
+}
+.btn_used{
+	-moz-border-radius:4px 0px 0px 4px;
+	border-radius: 4px 0px 0px 4px;
+	-webkit-border-radius:4px 0px 0px 4px;
+	margin-right: -3px;
+}
+.btn_new{
+	-moz-border-radius:0px 4px 4px 0px;
+	border-radius: 0px 4px 4px 0px;
+	-webkit-border-radius:0px 4px 4px 0px;
+	margin-left: -2px;
+}
+.btn_used:hover,.btn_new:hover{
+	background: #fa9e11;
+	border-color: #f9d66b #d1902c #d1902c #d1902c;
+}
+.btn_new:hover{
+	border-left-color:#f9d66b;
+}
+
+.btn_used.onpress,.btn_new.onpress,.btn_used.onpress:hover,.btn_new.onpress:hover{
+	background: #c2c0b8 url(../img/bg_btn_newusado.png) no-repeat left top;
+	-moz-box-shadow:inset 0px 1px 3px #555;
+   	-webkit-box-shadow:inset 0px 1px 3px #555;
+   	box-shadow:inset 0px 1px 3px #555;
+   	border-color: #777;
+}
+/*botones body type (carroceria)*/
+.bodybtn{
+	display: block;
+	width: 75px;
+	height:32px;
+	cursor: pointer;
+}
+.bodytype{
+	display: block;
+	width: 100px;
+	height:32px;
+	float: right;
+	margin-top:-40px;
+	clear: both;
+	font-size: 9px;
+	color: #999;
+}
+.bodybtn.camioneta,.bodytype.camioneta {
+	background: url(../img/car_body/camioneta.png) no-repeat right top;
+}
+.bodybtn.compacto,.bodytype.compacto{
+	background: url(../img/car_body/compacto.png) no-repeat right top;
+}
+.bodybtn.convertible,.bodytype.convertible{
+	background: url(../img/car_body/convertible.png) no-repeat right top;
+}
+.bodybtn.coupe,.bodytype.coupe{
+	background: url(../img/car_body/coupe.png) no-repeat right top;
+}
+.bodybtn.sedan,.bodytype.sedan{
+	background: url(../img/car_body/sedan.png) no-repeat right top;
+}
+.bodybtn.station,.bodytype.station{
+	background: url(../img/car_body/stationwgn.png) no-repeat right top;
+}
+.bodybtn.suv,.bodytype.suv{
+	background: url(../img/car_body/suv.png) no-repeat right top;
+}
+.bodybtn.van,.bodytype.van{
+	background: url(../img/car_body/van.png) no-repeat right top;
+}
+.bodybtn.camioneta:hover,.bodybtn.compacto:hover,.bodybtn.convertible:hover,.bodybtn.coupe:hover,.bodybtn.sedan:hover,.bodybtn.station:hover,.bodybtn.suv:hover,.bodybtn.van:hover{
+	background-position:right -33px;
+}
+
+/*____________________ breadcrumbs _________________________*/
+.breadcrumbs{
+	padding-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	color: #666;
+}
+.breadcrumbs ul li{
+	display: inline;
+	list-style-type: none;
+	font-size: 10px;
+	padding-right: 15px;	
+}
+.breadcrumbs li{
+	background: url(../img/ar_open.png) no-repeat right top;
+}
+.breadcrumbs li:last-child{
+	background: none;
+}
+
+/*-------------------- listados catalogo -------------------*/
+/*vista bloque*/
+.block_post_th{/*bloque thumbs de post oferta*/
+	display: block;
+	float: left;
+	margin-left: 9px;
+	/*margin-right: 7px;*/
+	margin-top: 10px;
+	height: 275px;
+	padding-left: 2px;
+	font-size: 11px;
+	color: #555;
+	background: url(../img/bg_blockth.gif) no-repeat left top;
+}
+.block_post_th img{
+	border: 2px solid #fff;
+	margin-top: 1px;
+	/*-moz-box-shadow:0px 2px 3px #777;
+   	-webkit-box-shadow: 0px 2px 3px #777;
+   	box-shadow:0px 2px 3px #777;
+   	margin-bottom: 4px;*/
+}
+.block_post_th h3{
+	background: url(../img/bg_h3_block_arrow.png) no-repeat left top;
+	height: 32px;
+	min-height: 20px;
+	padding-top: 24px;
+	padding-left: 5px;
+	margin-top: -21px;
+	line-height: 15px;
+	z-index: 100;
+	position: relative;
+}
+.block_post_th h3,.list_post_th h3{
+	font-size: 15px;
+	color: #333;
+	font-weight: bold;
+}
+.block_post_th p{
+	padding-left: 5px;
+}
+.block_post_th h3,.block_post_th p{
+	width: 210px;
+}
+.block_post_th p.price,.list_post_th p.price{
+	color: #ff1e00;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 4px;
+	margin-bottom: 5px;
+}
+.date_post_th{
+	width:100px !important;
+	font-size: 10px;
+	color: #888;
+	text-align: left;
+	/*padding: 2px 14px 5px 5px;*/
+	padding-left:14px !important;
+	padding-top: 1px;
+	padding-bottom: 2px;
+	margin-top: 5px;
+	margin-right: 8px;
+	background: url(../img/calendar.gif) no-repeat left top;
+}
+.listview p.date_post_th{
+	background: url(../img/calendar.gif) no-repeat right top;
+	text-align: right;
+	padding-right:14px !important;
+	margin-bottom: 10px;
+	margin-right: 0;
+}
+.dealerlink{
+	display: block;
+	width: 215px;
+	overflow:hidden;
+    padding: 2px;
+    border-top: 1px solid #efefef;
+}
+.dealerlink.listview{
+	border-top: 0;
+	float: right;
+	width: auto;
+}
+.dealerlink a {
+    float: right;
+    margin-right: 4px;
+	font-weight: bold;
+}
+.dealerlink.listview a{
+	max-width: 200px;
+	width: auto;
+}
+.dealerlink a:hover{
+	text-decoration: none;
+	color: #666;
+}
+.dealerlink img,.dealerlink a,.dealerlink span{
+	float: right;
+	margin-right: 5px;
+	width: 16px;
+	height: 16px;
+}
+
+.list_post_th span.date_post_th{
+	float: right;
+	margin-top: 70px;
+    position: relative;
+    right: -190px;
+}
+.label_th{
+	z-index: 50;
+	position: relative;
+	/*margin-bottom: -21px;*/
+	margin-top:-262px;
+	margin-left: -5px;
+	width: 221px;
+	padding-top: 3px;
+	padding-left:8px;
+	height: 30px;
+	color: #fff;
+}
+.label_th.red{
+	background: url(../img/ribbon_red.png) no-repeat left top;
+}
+.label_th.orange{
+	background: url(../img/ribbon_orange.png) no-repeat left top;
+}
+.label_th.green{
+	background: url(../img/ribbon_green.png) no-repeat left top;
+}
+/*vista lista*/
+.list_post_th{/*bloque thumbs de post oferta*/
+	display: block;
+	margin-left: 15px;
+	margin-right: 25px;
+	margin-top: 11px;
+	margin-bottom: -5px;
+	height: 95px;
+	padding: 5px;
+	font-size: 11px;
+	color: #555;
+	clear: both;
+	background: url(../img/bg_list_post.gif) no-repeat left top;
+        cursor: pointer;
+}
+.list_post_th h3{
+	font-size: 16px;
+	line-height: 17px;
+	margin-bottom: 5px;
+}
+.list_post_th p.price{
+	font-size: 15px;
+}
+.list_post_th img{
+	border: 2px solid #fff;
+	/*-moz-box-shadow:0px 2px 3px #777;
+   	-webkit-box-shadow: 0px 2px 3px #777;
+   	box-shadow:0px 2px 3px #777;
+   	margin-bottom: 1px;*/
+   	margin-top: -3px;
+   	margin-left: -3px;
+   	float: left;
+}
+.list_maindata,.list_metadata{
+	float: left;
+	height: 91px;
+	background:url(../img/arrow_list_blanco.png) no-repeat left top;
+    margin-top: -3px;
+}
+.list_maindata{
+	margin-left: -19px;
+	padding-left: 24px;
+	padding-top: 3px;
+}
+.list_metadata{
+	margin-left: 20px;
+	padding-left: 20px;
+	padding-top: 3px;
+
+}
+.list_metadata p{
+	margin-top: 3px;
+}
+.list_metadata p strong{
+	color: #555;
+    float: left;
+    padding-right: 5px;
+    text-align: right;
+    width: 80px;
+}
+.list_label{
+	float: left;
+	height: 67px;
+	width: 130px;
+	margin-left: -19px;
+    margin-top: -3px;
+    padding-top:27px;
+    padding-left: 15px;
+    padding-right: 4px;
+ 	margin-right: 0;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+.list_label.green{
+	background: url(../img/list_label_green.png) no-repeat left top;
+	color: #fff;
+	text-shadow: #666 0 1px 0;
+}
+
+/*--------------------- flotante - ficha -------------------*/
+.ficha.bx{
+	padding: 10px;
+    width: 880px;
+    background: #fff;
+    -moz-border-radius:5px;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	margin-top: 5px;
+    
+}
+.slide_ficha{
+	float: right;
+	width: 405px;
+	padding-top: 5px;
+	margin-top: -10px;
+	border-left: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+.dealerhead{
+	padding-left: 5px;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	background: url(../img/rgt_ficha_divisor.png) no-repeat left bottom;
+}
+.dealerhead{
+	margin-top: 5px;
+	padding-bottom: 5px;
+	height: 70px;
+}
+.dealerhead img{
+	float: left;
+	margin-right: 5px;	
+}
+#map{
+	margin-left: 5px;
+}
+.dealer_info{
+	margin-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+.dealer_info ul li{
+	list-style-type: none;
+}
+.dealer_info li{
+	font-size: 11px;
+	margin-bottom:5px;
+	padding-left: 24px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	color: #444;
+}
+.dealer_info li.place{
+	background: url(../img/marker.png) no-repeat left top;
+}
+.dealer_info li.phone{
+	background: url(../img/phone.png) no-repeat left top;
+}
+.dealer_info li.mail{
+	background: url(../img/mail.png) no-repeat left top;
+}
+.dealer_info li.web{
+	background: url(../img/globe.png) no-repeat left top;
+}
+.dealer_info li.hour{
+	background: url(../img/clock.png) no-repeat left top;
+}
+#gallery{
+	margin-left: 5px;
+}
+#menu li{
+	/* Every thumbnail is a li element */
+	width:80px;
+	display:block;
+	list-style:none;
+	height:60px !important;
+	overflow:hidden;
+	float: left;
+	cursor: pointer;
+	padding-top: 11px;
+}
+#menu li:hover{
+	opacity: 1 !important;
+}
+.dealerdata{
+	background: url(../img/rgt_ficha_divisor.png) no-repeat left top;
+	margin-top: 10px;
+	padding-top: 16px;
+	height: 460px;
+}
+.metadata{
+	float: left;
+	width: 440px;
+	min-height: 480px;
+	padding: 5px;
+}
+.metadata.altern{
+	width: auto;
+	min-height:300px;
+}
+.metadata h1{
+	font-size: 24px;
+	margin-bottom: 5px;
+	color: #000;
+}
+.metadata h2{
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #ff1e00;
+	font-weight: bold;
+}
+.datepost{
+	font-size: 11px;
+	color: #666;
+	float: right;
+	margin-bottom: 10px;
+    margin-top: -10px;
+    text-align: right;
+}
+.datepost strong{
+	margin-right: 4px;
+}
+.metadata table{
+	border-collapse: collapse;
+	border:0;
+	font-size: 11px;
+}
+.metadata td{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #ddd;
+}
+.metadata td.label{
+	font-weight: bold;
+	color: #000;
+}
+
+
+.cerok{
+	float: right !important;
+    margin-top: 1px !important;
+}
+.fichatec{
+	margin-top: 20px;
+}
+.fichatec h3{
+	margin-bottom: 13px;
+	color: #e46e2c;
+}
+.contactdealer{
+	background: #feffdf;
+	padding: 15px;
+	display: block;
+	clear: both;
+	margin-top: 20px;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	border: 1px solid #eee;
+	font-size: 11px;
+}
+.contactdealer h3{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.contactdealer label{
+	display: block;
+	font-size: 11px;
+	margin-bottom: 2px;
+	clear: both;
+}
+.contactdealer input[type="text"],.contactdealer textarea{
+	width: 350px;
+}
+.contactdealer span{
+	font-size: 10px;
+	color: #444;
+	float: left;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+.contactdealer span input{
+	margin-left: 2px;
+}
+.datetestdrv{
+	display: block;
+	height: 45px;
+	clear: both;
+	width: 350px;
+}
+.datetestdrv input[type="text"]{
+	width: 130px;
+}
+.datetestdrv input{
+	margin-right: 3px;
+}
+
+
+
+/*****--------form ficha crear--------******/
+
+.metadata table td{
+	height: 36px;
+}
+.metadata table td input{
+	margin-bottom: 0;
+	margin-right: 4px;
+}
+.metadata table td label{
+	color: #555;
+	font-size: 10px;
+	margin-right: 6px;
+}
+.metadata table td select{
+	max-width: 250px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.metadata table td p{
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+.split_top{
+	background: url("../img/rgt_ficha_divisor.png") no-repeat scroll left top transparent;
+    margin-top: 10px;
+    padding-top: 16px;
+}
+.split_top h3{
+	padding-top: 5px;
+	margin-bottom: 15px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #fafafa;
+}
+.hiddenchecks{
+	float: right;
+	display: none;
+}
+.fichabtn{
+	text-align: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+p.pub{
+	border-top: 1px solid #ddd;
+}
+.equipament{
+	border: 1px solid #ddd;
+    height: 215px;
+    overflow: auto;
+    width: 210px;
+}
+.equipament table{
+	max-width: 210px;
+	width: auto;
+}
+.equipament td{
+	padding-left: 4px;	
+}
+.dealerlink input{
+	float: right;
+	margin-top: 2px;
+}
+
+.edit_icn,.del_icn,.pub_icn{
+	display: block;
+	width: 17px;
+	height: 16px;
+	margin-right: 1px;
+}
+.edit_icn{
+	background: url(../img/editar_icn.png) no-repeat left top;
+}
+.del_icn{
+	background: url(../img/eliminar_icn.png) no-repeat left top;
+}
+.pub_icn{
+	background: url(../img/publicar_icn.png) no-repeat left top;
+}
+.edit_icn:hover,.del_icn:hover,.pub_icn:hover{
+	background-position:0 -16px;
+	cursor: pointer;
+}
+.pub_icn.publicado,.pub_icn.publicado:hover{
+	background-position:0 -32px;
+	cursor: pointer;
+}
+.dealerheader{
+	padding: 20px;
+	height: 150px;
+}
+.logot{
+	float: left;
+	margin-right: 10px;
+	width:150px;
+	height: 150px;
+}
+.dealerheader h2{
+	font-size: 25px;
+	margin-top: -4px;
+	margin-bottom: 15px;
+	margin-left: 155px;
+	text-shadow: #777 0 1px 3px;
+}
+.dealerheader div.dealer_info{
+	margin-left: 155px;
+}
+.dealerheader div.dealer_info li{
+	margin-bottom:2px;
+}
+.end_actionbtn{
+	margin-top: 10px;
+	margin-right: 25px;
+	float: right;
+	font-size: 11px;
+}
+.end_actionbtn li{
+	float: left;
+	margin-left: 6px;
+	margin-right: 2px;
+}
+.end_actionbtn button{
+	padding:2px 4px;
+	background: #fabe33;
+}
+.end_actionbtn input[type="checkbox"]{
+	margin-right: 3px;
+}
+.end_actionbtn input[type="checkbox"],.end_actionbtn label{
+	margin-top: 4px;
+}
+/*
+ Magical Clearfix -------- */
+
+.cf:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+
+.cf {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .cf {height: 1%;}
+.cf {display: block;}
+/* End hide from IE-mac */

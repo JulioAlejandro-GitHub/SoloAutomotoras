@@ -1,0 +1,3 @@
+
+var guest = new Guest();
+

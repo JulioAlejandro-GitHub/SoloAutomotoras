@@ -1,0 +1,430 @@
+/*---------------resets----------------------*/
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,pre,dl,dt,dd,fieldset,p,blockquote,th,td,input[type="checkbox"],input[type="radio"]{
+	margin: 0;
+	padding: 0;	
+}
+img{
+	border: 0 none;
+}
+img{
+	border: 0 none;
+}
+ul,li,ol{
+	list-style-type: none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*------gral------*/
+body{
+	background:#fff;
+}
+
+html,body,div,p {
+	font-family: 'Lucida Grande', Tahoma, Verdana, Helvetica, Arial, Geneva, sans-serif;
+	font-weight: normal;
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration:none;
+}
+a:link {
+	color: #016fbc;
+}
+a:visited {
+	color: #016fbc;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	color: #333;
+	text-decoration: underline;
+}
+
+/*publicar btn*/
+.fichabtn.pub button,.fichabtn.pub input[type="submit"],.fichabtn.pub input[type="button"]{
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background: #a4d51c;
+	border-color: #cff26b #719805 #719805 #719805;
+	text-shadow: #cff26b 0 1px 0;
+}
+.fichabtn.pub button:hover,.fichabtn.pub input[type="submit"]:hover,.fichabtn.pub input[type="button"]:hover{
+	background: #7ca801;
+	border-color: #92c309 #658802 #658802 #658802;
+	box-shadow:0px 1px 2px #aaa;
+	-moz-box-shadow:0px 1px 2px #aaa;
+   	-webkit-box-shadow: 0px 1px 2px #aaa;
+	text-decoration: none;
+}
+
+
+
+
+/*list*/
+span.par input[type="text"]{
+	font-size: 11px;
+	width: 80px;
+	margin-bottom: 0 !important;
+}
+
+
+/*-------------------- listados catalogo -------------------*/
+/*vista bloque*/
+
+.date_post_th{
+	width:90px !important;
+	font-size: 10px;
+	color: #888;
+	text-align: left;
+	/*padding: 2px 14px 5px 5px;*/
+	padding-left:14px !important;
+	padding-top: 1px;
+	padding-bottom: 2px;
+	margin-top: 5px;
+	margin-right: 8px;
+	background: url(../img/calendar.gif) no-repeat left top;
+}
+.listview p.date_post_th{
+	background: url(../img/calendar.gif) no-repeat right top;
+	text-align: right;
+	padding-right:14px !important;
+	margin-bottom: 10px;
+	margin-right: 0;
+}
+.dealerlink img,.dealerlink a,.dealerlink span{
+	float: right;
+	margin-right: 5px;
+	width: 16px;
+	height: 16px;
+}
+
+
+.upload {
+    position:relative;
+    width:664px;
+}
+.realupload {
+    position:absolute;
+    top:0;
+    right:0;
+
+    /* start of transparency styles */
+    opacity:0;
+    -moz-opacity:0;
+    filter:alpha(opacity:0);
+    /* end of transparency styles */
+
+    z-index:2; /* bring the real upload interactivity up front */
+    width:270px;
+}
+form .fakeupload {
+    background:url(img/calendar.gif) no-repeat 100% 50%;
+}
+form .fakeupload input {
+    width:401px;
+}
+/******************/
+
+.dealerhead{
+	padding-left: 5px;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	background: url(../img/rgt_ficha_divisor.png) no-repeat left bottom;
+}
+.dealerhead{
+	margin-top: 5px;
+	padding-bottom: 5px;
+	height: 70px;
+}
+.dealerhead img{
+	float: left;
+	margin-right: 5px;	
+}
+#map{
+	margin-left: 5px;
+}
+.dealer_info{
+	margin-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+.dealer_info ul li{
+	list-style-type: none;
+}
+.dealer_info li{
+	font-size: 11px;
+	margin-bottom:5px;
+	padding-left: 24px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	color: #444;
+}
+.dealer_info li.place{
+	background: url(../img/marker.png) no-repeat left top;
+}
+.dealer_info li.phone{
+	background: url(../img/phone.png) no-repeat left top;
+}
+.dealer_info li.mail{
+	background: url(../img/mail.png) no-repeat left top;
+}
+.dealer_info li.web{
+	background: url(../img/globe.png) no-repeat left top;
+}
+.dealer_info li.hour{
+	background: url(../img/clock.png) no-repeat left top;
+}
+#gallery{
+	margin-left: 5px;
+}
+#menu li{
+	/* Every thumbnail is a li element */
+	width:80px;
+	display:block;
+	list-style:none;
+	height:60px !important;
+	overflow:hidden;
+	float: left;
+	cursor: pointer;
+	padding-top: 11px;
+}
+#menu li:hover{
+	opacity: 1 !important;
+}
+
+.metadata.altern{
+	width: auto;
+	min-height:300px;
+}
+
+.contactdealer{
+	background: #feffdf;
+	padding: 15px;
+	display: block;
+	clear: both;
+	margin-top: 20px;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	border: 1px solid #eee;
+	font-size: 11px;
+}
+
+.datetestdrv input{
+	margin-right: 3px;
+}
+
+
+
+/*****--------form ficha crear--------******/
+
+.metadata table td{
+	height: 20px;
+}
+.metadata table td input{
+	margin-bottom: 0;
+	margin-right: 4px;
+}
+.metadata table td label{
+	color: #555;
+	font-size: 10px;
+	margin-right: 6px;
+}
+.metadata table td select{
+	max-width: 250px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.metadata table td p{
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+.split_top{
+	background: url("../img/rgt_ficha_divisor.png") no-repeat scroll left top transparent;
+    margin-top: 10px;
+    padding-top: 16px;
+}
+.split_top h3{
+	padding-top: 5px;
+	margin-bottom: 15px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #fafafa;
+}
+.hiddenchecks{
+	float: right;
+	display: none;
+}
+.fichabtn{
+	text-align: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+p.pub{
+	border-top: 1px solid #ddd;
+}
+.equipament{
+	border: 1px solid #ddd;
+    height: 215px;
+    overflow: auto;
+    width: 210px;
+}
+.equipament table{
+	max-width: 210px;
+	width: auto;
+}
+.equipament td{
+	padding-left: 4px;	
+}
+.dealerlink input{
+	float: right;
+	margin-top: 2px;
+}
+
+.edit_icn,.del_icn,.pub_icn{
+	display: block;
+	width: 17px;
+	height: 16px;
+	margin-right: 1px;
+}
+.edit_icn{
+	background: url(../img/editar_icn.png) no-repeat left top;
+}
+.del_icn{
+	background: url(../img/eliminar_icn.png) no-repeat left top;
+}
+.pub_icn{
+	background: url(../img/publicar_icn.png) no-repeat left top;
+}
+.edit_icn:hover,.del_icn:hover,.pub_icn:hover{
+	background-position:0 -16px;
+	cursor: pointer;
+}
+.pub_icn.publicado,.pub_icn.publicado:hover{
+	background-position:0 -32px;
+	cursor: pointer;
+}
+.dealerheader{
+	padding: 20px;
+	height: 150px;
+}
+.logot{
+	float: left;
+	margin-right: 10px;
+	width:150px;
+	height: 150px;
+}
+.dealerheader h2{
+	font-size: 25px;
+	margin-top: -4px;
+	margin-bottom: 15px;
+	margin-left: 155px;
+	text-shadow: #777 0 1px 3px;
+}
+.dealerheader div.dealer_info{
+	margin-left: 155px;
+}
+.dealerheader div.dealer_info li{
+	margin-bottom:2px;
+}
+.end_actionbtn{
+	margin-top: 10px;
+	margin-right: 25px;
+	float: right;
+	font-size: 11px;
+}
+.end_actionbtn li{
+	float: left;
+	margin-left: 6px;
+	margin-right: 2px;
+}
+.end_actionbtn button{
+	padding:2px 4px;
+	background: #fabe33;
+}
+.end_actionbtn input[type="checkbox"]{
+	margin-right: 3px;
+}
+.end_actionbtn input[type="checkbox"],.end_actionbtn label{
+	margin-top: 4px;
+}
+
+
+
+/*crea automora y usuarios*/
+.creaempresa{
+	width: 390px;
+	
+	margin-left: 10px;
+}
+div.creaempresa:first-child{
+	margin-right:30px;
+}
+.creaempresa input[type="text"],.creaempresa input[type="password"]{
+	width: 250px;
+}
+
+
+/*grids mantenedores automotoras, sucursales y usuarios*/
+.namegrid{
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.namegrid .btn .rgt{
+	float: right;
+}
+.grid_adm{
+	width: 1200px;
+	height:300px;
+	overflow: auto;
+	margin-top: 10px;
+}
+
+
+.grid_adm table{
+	font-size: 12px;
+	border:1px solid #ddd;
+	border-collapse:collapse;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	padding: 0;
+}
+.grid_adm tr.odd{
+	background-color: #f0eef0;
+}
+
+.grid_adm table th,..grid_adm table td{
+	border-left:1px solid #ddd
+}
+.grid_adm td{
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	color: #555;
+}
+.grid_adm td img{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.grid_adm table th{
+	background: #ccc;
+	padding: 7px;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25, #eee), color-stop(0.95, #ccc));
+	background-image: -moz-linear-gradient( center top, #eee 25%, #ccc 95% );
+}
