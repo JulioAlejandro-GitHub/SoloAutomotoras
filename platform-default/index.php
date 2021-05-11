@@ -43,10 +43,5 @@
     <? /*                 * ******* para llamadas fancybox ********* */ ?>
     <a id="autostartfancybox" style="display:none" href="#"></a>
     
-
-    <script>
-    _gaq.push(['_trackPageview', 'home']);
-    </script>
-    
 </body>
 </html>

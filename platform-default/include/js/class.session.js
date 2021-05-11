@@ -26,7 +26,7 @@ Session = function(params){
         var message = "";
         
         if (!username || !password) {
-            message = "Ingrese usuario y contraseña";
+            message = "Ingrese usuario y contraseña 1";
             $(obj.message_error).text(message).css({ "display" : "block" });    
             return false;
         }
@@ -48,6 +48,9 @@ Session = function(params){
             },  
             onSuccess  :  function(result) {
                 var result  = $.trim(result);
+                
+                console.log('result');
+                console.log(result);
                 
                 switch(result) {
                     case 'LOGIN_ERROR':

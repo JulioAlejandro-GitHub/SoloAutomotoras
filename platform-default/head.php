@@ -38,18 +38,21 @@
     
     <script type="text/javascript" src="include/js/loader/class.loader.js"></script>
     <link rel="stylesheet" type="text/css" href="include/js/loader/class.loader.css">
-    <script type="text/javascript" src="include/js/class.ajax.js"></script>
-    <script type="text/javascript" src="include/js/class.automotora.js"></script>
-    <script type="text/javascript" src="include/js/class.search.js"></script>
-    <script type="text/javascript" src="include/js/class.admin.js"></script>
-    <script type="text/javascript" src="include/js/class.user.js"></script>
-    <script type="text/javascript" src="include/js/class.guest.js"></script>
-    <script type="text/javascript" src="include/js/class.session.js"></script>
-    <script type="text/javascript" src="include/js/class.menu.js"></script>
+    
+    <? include './app/comun/config.php'; ?>
+    
+    <script type="text/javascript" src="include/js/class.ajax.js?v=<?php echo VERSION_JS?>"></script>
+    <script type="text/javascript" src="include/js/class.automotora.js?v=<?php echo VERSION_JS?>"></script>
+    <script type="text/javascript" src="include/js/class.search.js?v=<?php echo VERSION_JS?>"></script>
+    <script type="text/javascript" src="include/js/class.admin.js?v=<?php echo VERSION_JS?>"></script>
+    <script type="text/javascript" src="include/js/class.user.js?v=<?php echo VERSION_JS?>""></script>
+    <script type="text/javascript" src="include/js/class.guest.js?v=<?php echo VERSION_JS?>""></script>
+    <script type="text/javascript" src="include/js/class.session.js?v=<?php echo VERSION_JS?>""></script>
+    <script type="text/javascript" src="include/js/class.menu.js?v=<?php echo VERSION_JS?>""></script>
    
     <!-- google maps -->
     <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
-    
+
     <script type="text/javascript">
         $(document).ready(function(){
             var automotora = new Automotora({
@@ -89,9 +92,16 @@
     }
     </script>
     
-    
-    <? /* #############################################  google-analytics.com  ########################################### */ ?>
-
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43600015-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
     
     
 </head>

@@ -12,8 +12,8 @@ $Logger = new Logger(LOG_NOMBRE);
 $CAT    = new Catalogo();
 
 
-$Logger->write_log("******** contador.php ***************");
-$Logger->write_log("[{$_POST['accion']}]-->[{$_POST['array_vehiculo']}]");
+//$Logger->write_log("******** contador.php ***************");
+//$Logger->write_log("[{$_POST['accion']}]-->[{$_POST['array_vehiculo']}]");
 
 switch ($_POST['accion']) {
     case 'busqueda':

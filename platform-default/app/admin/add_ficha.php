@@ -117,8 +117,6 @@ function click_to_thumb(img) {
     var id_automotora  = '<?=$_SESSION['ID_AUTOMOTORA']?>';
     var automotora_rut = '<?=$_SESSION['AUTOMOTORA_RUT']?>';
     var ruta_include   = '<?=$ruta_include?>';
-    //alert(img);
-    //var img = 'tmp___' + id_automotora + '_' + automotora_rut + '_' + id + '.jpg';
     
     var mensaje = '<img width="400" height="300" src="' + ruta_include + 'img/catalog/' + id_automotora + '/' + img + '"/>';
     document.getElementById('g1').innerHTML='';
@@ -140,16 +138,12 @@ function sendfile(id) {
              if (datos == '0') {
                  alert("Ha ocurrido un error al crear imagen.");
              }else if (datos == '1') {
-                 //alert("no copy 400x300");
                  alert("Ha ocurrido un error, al copiar imagen 400x300.");
              }else if (datos == '2') {
-                 //alert("no es imagen");
                  alert("Ha ocurrido un error.\n\nEl archivo no es una imagen.");
              }else if (datos == '3') {
-                 //alert("no existe el nombre temporal");
                  alert("Ha ocurrido un error.\n\nEl archivo no es una imagen.");
              }else if (datos == '4') {
-                 //alert("no copy 80x60");
                  alert("Ha ocurrido un error, al copiar imagen 80x60.");
              }
              

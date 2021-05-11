@@ -85,7 +85,7 @@
 	background: url(../img/bg_reghere.png) no-repeat left top;
 }
 .regishere:hover{
-	background: #fdf2d3 url(../img/bg_reghere.png) no-repeat left top;size}
+	background: "#fdf2d3 url(../img/bg_reghere.png) no-repeat left top;size"}
 .regishere > .btn{
 	margin-left: 30px;
     position: relative;

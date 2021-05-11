@@ -12,24 +12,6 @@ if ($_SESSION['USUARIO_TIPO'] != 'vendedor') {
 
 $CAT    = new Catalogo();
 
-
-//$busq_marca        = $_GET['busq_marca'];
-//$busq_modelo       = $_GET['busq_modelo'];
-//$busq_tipo         = $_GET['busq_tipo'];
-//$busq_annio_desde  = $_GET['busq_annio_desde'];
-//$busq_annio_hasta  = $_GET['busq_annio_hasta'];
-//$busq_precio_desde = $_GET['busq_precio_desde'];
-//$busq_precio_hasta = $_GET['busq_precio_hasta'];
-//$busq_region       = $_GET['busq_region'];
-//$busq_ciudad       = $_GET['busq_ciudad'];
-//$busq_automotora   = $_SESSION['AUTOMOTORA_ID_AUTOMOTORA'];
-//$busq_usado        = $_GET['usado'];
-//$busq_nuevo        = $_GET['nuevo'];
-//
-//$view              = $_GET['view'];
-
-
-
 $busq_marca        = $_SESSION['busq_marca'];
 $busq_modelo       = $_SESSION['busq_modelo'];
 $busq_tipo         = $_SESSION['busq_tipo'];
@@ -173,8 +155,6 @@ $view              = $_SESSION['view'];
                 <? } ?>
                 <div class="list_maindata">
                     <h3><?=mb_strtoupper($marca_nombre)?> <?=mb_strtoupper($vehiculo_modelo)?></h3>
-                    <!--<p>2012<img src="img/cerok.png" alt="0 km" class="cerok"></p>-->
-                    
                     <p><?=$vehiculo_annio?> 
                         <? if ($vehiculo_kilometros == 0) { ?>
                             <img src="include/img/cerok.png" alt="0 km" class="cerok">

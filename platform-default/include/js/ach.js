@@ -79,15 +79,19 @@ function elimina_ficha(id_vehiculo) {
     }
 }
 function ver_ficha(id) {
-//    var url = "ficha.php?id="+id;
-//    document.getElementById('autostartfancybox').href=url;
-//    $("#autostartfancybox").fancybox().trigger('click');
     
-    $.fancybox.open({
-        href: 'ficha.php?id=' + id,
-        type: 'ajax',
-        padding: 5
-    });
+    console.log('ver_ficha',id);
+    
+    
+    var url = "ficha.php?id="+id;
+    document.getElementById('autostartfancybox').href=url;
+    $("#autostartfancybox").fancybox().trigger('click');
+    
+//    $.fancybox.open({
+//        href: 'ficha.php?id=' + id,
+//        type: 'ajax',
+//        padding: 5
+//    });
     
 }
 function admin_ver_ficha(id) {

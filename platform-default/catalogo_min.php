@@ -13,10 +13,10 @@ $CAT    = new Catalogo();
 $User   = new User();
 
 
-$Logger->write_log("*catalogo fichas....");
+//$Logger->write_log("*catalogo fichas....");
 
 
-$_SESSION['limit_sql'] = $_SESSION['pagina'] * $_SESSION['fichas_pagina'];
+$_SESSION['limit_sql'] = $_SESSION['pagina'] * $_SESSION['fichas_pa gina'];
 
 if ($_SESSION['USUARIO_TIPO'] == 'vendedor') {
     $_SESSION['busq_automotora'] = $_SESSION['AUTOMOTORA_ID_AUTOMOTORA'];
@@ -179,9 +179,9 @@ $view              = $_SESSION['view'];
             }
         }
     ?>
-        <? if ($view == 'list') { ?>
+        <?php if ($view == 'list') { ?>
             <div class="list_post_th">
-                <?
+                <?php
                 $ruta_400x300 = PATH_CATALOG_IMG.$automotora_id_automotora.'/';
                 $ruta_80x60   = PATH_CATALOG_IMG.$automotora_id_automotora.'/thumbnails/';
                 $ruta_215     = PATH_CATALOG_IMG.$automotora_id_automotora.'/thumbnails/215/';
@@ -191,12 +191,12 @@ $view              = $_SESSION['view'];
                 ?>
                 <img style="cursor:pointer" src="<?=$image?>" width="125" height="93" onclick="ver_ficha(<?=$vehiculo_id_vehiculo?>);">
                 
-                <? if ($colorCartel && $txtCartel) { ?>
+                <?php if ($colorCartel && $txtCartel) { ?>
                     <div style="cursor:pointer" onclick="ver_ficha(<?=$vehiculo_id_vehiculo?>);" class="list_label <?=$colorCartel?>"><?=$txtCartel?></div>
-                <? } ?>
+                <?php } ?>
                 
                 <div class="list_maindata">
-                    <?
+                    <?php
                     //MITSUBISHI L 200 KATANA
                     //24
                     $titulo = $marca_nombre.' '.$modelo_nombre;
@@ -220,7 +220,7 @@ $view              = $_SESSION['view'];
                     
                     <p class="price"><?=fprecio($vehiculo_precio)?></p>
                     
-                    <? if ($_SESSION['USUARIO_TIPO'] == 'visitante') {
+                    <?php if ($_SESSION['USUARIO_TIPO'] == 'visitante') {
                         $id_visitante  = $_SESSION['VISITANTE_ID_VISITANTE'];
                         $getFavoritos = $User->getFavoritos(array(
                                             'FAVORITO_ID_VISITANTE'  => $id_visitante,
@@ -231,12 +231,12 @@ $view              = $_SESSION['view'];
                             $favorito_id_favorito       = trim($rowFav['FAVORITO_ID_FAVORITO']);
                         }
                         ?>
-                        <? if (!$es_favorito) { ?>
+                        <?php if (!$es_favorito) { ?>
                             <a href="#" onclick="user.addFavorito({ id_vehiculo: '<?=$vehiculo_id_vehiculo?>'});">Agregar a favoritos</a>
-                        <? } else { ?>
+                        <?php } else { ?>
                            <a href="#" onclick="user.deleteFavorito({ id_favorito: '<?=$favorito_id_favorito?>', marca: '<?=$marca_nombre?>', modelo: '<?=$vehiculo_modelo?>', precio:'<?=fprecio($vehiculo_precio)?>'});">Quitar de favoritos</a>
-                        <? } ?>
-                    <? } ?>
+                        <?php } ?>
+                    <?php } ?>
                 </div>
                 <div class="list_metadata">
                     <p><strong>Carroceria:</strong> <?=$carroceria_nombre?></p>
@@ -248,9 +248,9 @@ $view              = $_SESSION['view'];
                 </div>
                 <div onclick="search.setAutomotora('<?=$automotora_id_automotora?>');" class="dealerlink listview"><a href="#"><img src="include/img/logo_dealer_link.jpg" alt=""><?=$automotora_nombre?></a></div>
             </div>
-        <? }else{ ?>
+        <?php }else{ ?>
             <div class="block_post_th">
-                <?
+                <?php
                 $ruta_400x300 = PATH_CATALOG_IMG.$automotora_id_automotora.'/';
                 $ruta_80x60   = PATH_CATALOG_IMG.$automotora_id_automotora.'/thumbnails/';
                 $ruta_215     = PATH_CATALOG_IMG.$automotora_id_automotora.'/thumbnails/215/';
@@ -262,14 +262,14 @@ $view              = $_SESSION['view'];
                 <h3 onclick="ver_ficha(<?=$vehiculo_id_vehiculo?>);" style="cursor:pointer;"><?=$marca_nombre?> <?=$vehiculo_modelo?></h3>
                 <p onclick="ver_ficha(<?=$vehiculo_id_vehiculo?>);" style="cursor:pointer;">
                     <?=$vehiculo_annio?>
-                    <? if ($vehiculo_kilometros == 0 && $vehiculo_kilometros != '') { ?>
+                    <?php if ($vehiculo_kilometros == 0 && $vehiculo_kilometros != '') { ?>
                         <img src="include/img/cerok.png" alt="0 km" class="cerok"/>
-                    <? } ?>
+                    <?php } ?>
                 </p>
                 <p onclick="ver_ficha(<?=$vehiculo_id_vehiculo?>);" style="cursor:pointer;" class="price"><?=fprecio($vehiculo_precio)?></p>
                 <div onclick="search.setAutomotora('<?=$automotora_id_automotora?>');" class="dealerlink"><?=$automotora_nombre?><a href="#"><img src="include/img/logo_dealer_link.jpg" alt=""></a></div>
                 
-                <? if ($_SESSION['USUARIO_TIPO'] == 'visitante') { 
+                <?php if ($_SESSION['USUARIO_TIPO'] == 'visitante') { 
                     $id_visitante  = $_SESSION['VISITANTE_ID_VISITANTE'];
                     $getFavoritos = $User->getFavoritos(array(
                                         'FAVORITO_ID_VISITANTE'  => $id_visitante,
@@ -283,13 +283,13 @@ $view              = $_SESSION['view'];
                     }
                     ?>
                     
-                    <? if (!$es_favorito) { ?>
+                    <?php if (!$es_favorito) { ?>
                         <a href="#" onclick="user.addFavorito({ id_vehiculo: '<?=$vehiculo_id_vehiculo?>'});">Agregar a favoritos</a>
-                    <? } else { ?>
+                    <?php } else { ?>
                         <a href="#" onclick="user.deleteFavorito({ id_favorito: '<?=$favorito_id_favorito?>', marca: '<?=$marca_nombre?>', modelo: '<?=$vehiculo_modelo?>', precio:'<?=fprecio($vehiculo_precio)?>'});">Quitar de favoritos</a>
-                    <? } ?>
-                <? } ?>
-                <?
+                    <?php } ?>
+                <?php } ?>
+                <?php
                 $colorCartel = '';
                 if ($veh_atrb[etiqueta][nom] == 'bono') {
                     $colorCartel = 'red';
@@ -306,25 +306,21 @@ $view              = $_SESSION['view'];
                 ?>
                 <div onclick="ver_ficha(<?=$vehiculo_id_vehiculo?>);" style="cursor:pointer;" class="label_th <?=$colorCartel?>"><?=$txtCartel?></div>
             </div>
-        <? } ?>
-    <? } ?>
+        <?php } ?>
+    <?php } ?>
     
     
     <!--<span style="border-bottom: 1px solid #f2f2f2; display: block; color: #999;"></span>-->
     
-    <?
+    <?php
     // EXISTEN MAS PAGINAS
     // SI 
         //PONER PAGINA SIGUIENTE
     // NO 
         // FIN ... PONER MENSAJE: FIN DE LOS RESULTADOS.... (CANTIDA DE RESULTADOS ENCONTRADOS)
     
-    
     $_SESSION['pagina']++;
     
-    
-//                echo "[".$_SESSION['limit_sql']."]<br>";
-//                echo "[".$_SESSION['fichas_pagina']."]<br>";  cvbcvbvb
     
     $resultados_encontrados = " - Resultados Encontrados ".$contador_resultados;
     $_SESSION['contador_resultados'] = $contador_resultados;
@@ -332,14 +328,14 @@ $view              = $_SESSION['view'];
 
     
 
-    <? if ($num_rows_Listado >= $_SESSION['fichas_pagina']) { ?>
+    <?php if ($num_rows_Listado >= $_SESSION['fichas_pagina']) { ?>
         <div id="send_publica" class="moreposts">
             <a href="catalogo_min.php?pagina=<?=$_SESSION['pagina']?>">
                 <img src="include/img/buscar_mas.png" alt="Buscar" />
                 <h4>Más Resultados - página siguiente (<?=$_SESSION['pagina']+1?>) <?=$resultados_encontrados?></h4>
             </a>
         </div>
-    <? } else { ?>
+    <?php } else { ?>
         <div id="send_publica" class="moreposts">
             <a>
                 <img src="include/img/ir_inicio.png" alt="Buscar" />
@@ -347,7 +343,7 @@ $view              = $_SESSION['view'];
                 <!-- link ir al pricipio...  -->
             </a>
         </div>
-    <? } ?>
+    <?php } ?>
 
     
 <script>

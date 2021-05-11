@@ -161,16 +161,6 @@ if ($automotora_horario_dom){
     }
 }
 /*****************************************************************/
-$Logger->write_log('***********************************');
-$Logger->write_log('get_img_udp --> ['.$_SESSION['ID_AUTOMOTORA'].']['.$_SESSION['AUTOMOTORA_RUT'].'][1]['.$id_vehiculo.']');
-list ($img_400x300_1, $img_80x60_1) = get_img_udp($_SESSION['ID_AUTOMOTORA'], $_SESSION['AUTOMOTORA_RUT'], 1, $id_vehiculo);
-$Logger->write_log('            <-- ['.$img_400x300_1.']['.$img_80x60_1.']');
-
-//list ($img_400x300_2, $img_80x60_2) = get_img_udp($_SESSION['ID_AUTOMOTORA'], $_SESSION['AUTOMOTORA_RUT'], 2, $id_vehiculo);
-//list ($img_400x300_3, $img_80x60_3) = get_img_udp($_SESSION['ID_AUTOMOTORA'], $_SESSION['AUTOMOTORA_RUT'], 3, $id_vehiculo);
-//list ($img_400x300_4, $img_80x60_4) = get_img_udp($_SESSION['ID_AUTOMOTORA'], $_SESSION['AUTOMOTORA_RUT'], 4, $id_vehiculo);
-//list ($img_400x300_5, $img_80x60_5) = get_img_udp($_SESSION['ID_AUTOMOTORA'], $_SESSION['AUTOMOTORA_RUT'], 5, $id_vehiculo);
-
 list ($img_400x300_1, $img_80x60_1, $nom_img_400_1, $nom_img_80_1) = get_2_img_udp($_SESSION['ID_AUTOMOTORA'], $VEHICULO_IMG1, 1);
 list ($img_400x300_2, $img_80x60_2, $nom_img_400_2, $nom_img_80_2) = get_2_img_udp($_SESSION['ID_AUTOMOTORA'], $VEHICULO_IMG2, 2);
 list ($img_400x300_3, $img_80x60_3, $nom_img_400_3, $nom_img_80_3) = get_2_img_udp($_SESSION['ID_AUTOMOTORA'], $VEHICULO_IMG3, 3);
@@ -199,18 +189,12 @@ list ($img_400x300_5, $img_80x60_5, $nom_img_400_5, $nom_img_80_5) = get_2_img_u
     }
     function click_to_thumb(img) {
         var img_400 = '<?=PATH_WEB_ABS_IMG?>img/catalog/<?=$_SESSION['ID_AUTOMOTORA']?>/' + img;
-        
-        //alert(img_400);
-        
         var html_img = '<img width="400" height="300" src="'+img_400+'"/>';
         document.getElementById('g1').innerHTML='';
         document.getElementById('g1').innerHTML=html_img;
     }
     function img_thumb(id, img){
-         //var mensaje = '<img onclick="click_to_thumb('+ id +')" onDblClick="change_to_file('+ id +')" width="80" height="60" src="'+img+'"/>';
-         
          var img_80 = '<?=PATH_WEB_ABS_IMG?>img/catalog/<?=$_SESSION['ID_AUTOMOTORA']?>/' + img;
-         
          var mensaje = '<img onclick="click_to_thumb(\''+ img +'\')" onDblClick="change_to_file('+ id +')" width="80" height="60" src="'+img_80+'"/>';
          document.getElementById('thumb' + id).innerHTML='';
          document.getElementById('thumb' + id).innerHTML=mensaje;
@@ -240,19 +224,8 @@ list ($img_400x300_5, $img_80x60_5, $nom_img_400_5, $nom_img_80_5) = get_2_img_u
              }else if (datos == '4') {
                  alert("no copy 80x60");
              }
-             
-//                 var mensaje = '<img width="400" height="300" src="<?=$ruta_include?>img/catalog/<?=$_SESSION[ID_AUTOMOTORA]?>/' + datos + '"/>';
-//                 document.getElementById('g1').innerHTML='';
-//                 document.getElementById('g1').innerHTML=mensaje;
-//
-//                 var mensaje = '<img onclick="click_to_thumb('+ id +')" onDblClick="change_to_file('+ id +')" width="80" height="60" src="<?=$ruta_include?>img/catalog/<?=$_SESSION[ID_AUTOMOTORA]?>/thumbnails/' + datos + '"/>';
-//                 document.getElementById('thumb' + id).innerHTML='';
-//                 document.getElementById('thumb' + id).innerHTML=mensaje;
                  
-                 
-                 
-                 
-                var n=datos.split(".");
+            var n=datos.split(".");
 
                var id_automotora  = '<?=$_SESSION['ID_AUTOMOTORA']?>';
                var automotora_rut = '<?=$_SESSION['AUTOMOTORA_RUT']?>';
